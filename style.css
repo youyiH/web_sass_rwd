@@ -31,22 +31,32 @@
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  letter-spacing: 3px;
 }
 
 #navigation .logo:hover {
   color: #6eb3ff;
 }
 
+#navigation .link {
+  text-align: center;
+}
+
 #navigation .link a {
   text-decoration: none;
-  padding: 30px;
+  padding: 30px 30px 30px 30spx;
   font-size: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 3px;
 }
 
 #navigation .link a:hover {
   color: #6eb3ff;
+}
+
+#navigation .social {
+  text-align: right;
 }
 
 #navigation .social img {
@@ -67,5 +77,42 @@
   width: 100%;
   height: 100vh;
   background: #eeeeee;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 300px;
+  font-family: "Kufam", cursive;
+  letter-spacing: 20px;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+
+#about p {
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 36px;
+  padding: 20px;
+}
+
+.button-box {
+  padding: 10px 60px;
+  border: 2px solid #252525;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-box:hover {
+  background: #252525;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
