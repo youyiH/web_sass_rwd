@@ -1,5 +1,31 @@
-h1 {
-  color: #0000ff;
-  font-family: 'Ranchers', cursive;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 標楷體;
+}
+
+* #navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+* .social img {
+  -webkit-filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+          filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* .social img:hover {
+  -webkit-filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+          filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
 }
 /*# sourceMappingURL=style.css.map */
