@@ -101,6 +101,7 @@
 .title {
   font-size: 36px;
   padding: 20px;
+  text-align: center;
 }
 
 .button-box {
@@ -114,5 +115,19 @@
 .button-box:hover {
   background: #252525;
   color: white;
+}
+
+#works {
+  height: 100vh;
+  background: #f9f9f9;
+}
+
+#works #work-box {
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 /*# sourceMappingURL=style.css.map */

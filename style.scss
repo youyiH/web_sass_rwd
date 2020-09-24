@@ -3,6 +3,7 @@
 // 主顏色與次顏色
 $color-maim: #252525;
 $color-sub: #6eb3ff;
+$color-bg-gray:#f9f9f9;
 
 //  文字大小:最大
 $font-size-big: 36px;
@@ -102,6 +103,7 @@ $font-family-main: "Kufam", cursive;
 .title {
     font-size: $font-size-big;
     padding: 20px;
+    text-align: center;
 }
 // 按鈕:盒子
 .button-box {
@@ -113,5 +115,18 @@ $font-family-main: "Kufam", cursive;
     &:hover {
         background: $color-maim;
         color: white;
+    }
+}
+
+// 作品集
+#works {
+    height: 100vh;
+    background: $color-bg-gray;
+
+    #work-box {
+        width: 1200px;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3,1fr);
     }
 }
