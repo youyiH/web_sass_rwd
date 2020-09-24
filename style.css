@@ -14,7 +14,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  padding: 20px 120px;
+  padding: 20px 100px;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   -webkit-box-align: center;
@@ -25,41 +25,7 @@
   background: white;
 }
 
-#navigation .logo {
-  font-family: "Kufam", cursive;
-  font-size: 36px;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  letter-spacing: 3px;
-}
-
-#navigation .logo:hover {
-  color: #6eb3ff;
-}
-
-#navigation .link {
-  text-align: center;
-}
-
-#navigation .link a {
-  text-decoration: none;
-  padding: 30px 30px 30px 30spx;
-  font-size: 30px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  letter-spacing: 3px;
-}
-
-#navigation .link a:hover {
-  color: #6eb3ff;
-}
-
-#navigation .social {
-  text-align: right;
-}
-
-#navigation .social img {
+#navigation img {
   -webkit-filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
           filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
   -webkit-transition: 0.5s;
@@ -68,9 +34,43 @@
   margin-left: 30px;
 }
 
-#navigation .social img:hover {
+#navigation img:hover {
   -webkit-filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
           filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+}
+
+.logo {
+  font-family: "Kufam", cursive;
+  font-size: 36px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 3px;
+}
+
+.logo:hover {
+  color: #6eb3ff;
+}
+
+.link {
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  padding: 30px 30px 30px 30px;
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 10px;
+}
+
+.link a:hover {
+  color: #6eb3ff;
+}
+
+.social {
+  text-align: right;
 }
 
 #banner {
@@ -100,7 +100,7 @@
 
 .title {
   font-size: 36px;
-  padding: 20px;
+  padding: 35px;
   text-align: center;
 }
 
@@ -117,6 +117,11 @@
   color: white;
 }
 
+.button-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
 #works {
   height: 100vh;
   background: #f9f9f9;
@@ -129,5 +134,61 @@
   margin: 0 auto;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (335px)[2];
+      grid-template-rows: repeat(2, 335px);
+  grid-gap: 20px 35px;
+}
+
+#works #work-box .work-box-small img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: #000;
+}
+
+#works #work-box .work-box-small h2 {
+  text-align: center;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+#works #work-box .work-box-small span {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+footer {
+  background: #252525;
+  padding: 50px;
+  text-align: center;
+}
+
+footer .logo {
+  color: #cdcdcd;
+}
+
+footer .link a {
+  color: #cdcdcd;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social img {
+  -webkit-filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+          filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
+  margin: 30px 20px;
+}
+
+footer #copyright {
+  color: #cdcdcd;
+  font-size: 8px;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
