@@ -38,6 +38,12 @@
   }
 }
 
+@media screen and (min-width: 1025px) {
+  #navigation {
+        grid-template-areas: "logo link social";
+  }
+}
+
 #navigation img {
   -webkit-filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
           filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
@@ -45,6 +51,13 @@
   transition: 0.5s;
   width: 32px;
   margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #navigation img {
+    margin-left: 0px;
+    width: 15px;
+  }
 }
 
 #navigation img:hover {
@@ -91,6 +104,7 @@
 
 .link {
   text-align: center;
+  grid-area: link;
 }
 
 .link a {
@@ -187,6 +201,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  #works {
+    height: auto;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   #works {
     height: auto;
     padding-bottom: 100px;

@@ -50,12 +50,22 @@ $mobile: 767px;
         padding: 10px 6px;
     }
 
+    // 桌電
+    @media screen and (min-width: $desktop) {
+        grid-template-areas: "logo link social";
+    }
+
     
     img {
         filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
         transition: 0.5s;
         width: 32px;
         margin-left: 30px;
+
+        @media screen and (max-width: $mobile) {
+            margin-left: 0px;
+            width: 15px;
+        }
         
         &:hover {
             filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
@@ -98,6 +108,7 @@ $mobile: 767px;
 
 .link {
     text-align: center;
+    grid-area: link;
 
     a {
         text-decoration: none;
@@ -192,6 +203,12 @@ $mobile: 767px;
 
     // 手機
     @media screen and (max-width: $mobile) {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    // 平板
+    @media screen and (max-width: $table) {
         height: auto;
         padding-bottom: 100px;
     }
