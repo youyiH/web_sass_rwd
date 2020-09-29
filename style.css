@@ -170,6 +170,15 @@
   grid-gap: 20px 35px;
 }
 
+@media screen and (max-width: 1024px) {
+  #works #work-box {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
+}
+
 #works #work-box .work-box-small img {
   display: block;
   width: 100%;
