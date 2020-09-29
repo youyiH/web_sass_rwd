@@ -36,6 +36,8 @@ $mobile: 767px;
     position: fixed;
     width: 100%;
     background: white;
+    // 深度軸:離眼睛越近數字越大
+    z-index: 1;
 
     // 平板
     @media screen and (max-width: $table) {
@@ -188,6 +190,12 @@ $mobile: 767px;
     height: 100vh;
     background: $color-bg-gray;
 
+    // 手機
+    @media screen and (max-width: $mobile) {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
     #work-box {
         width: 1200px;
         display: grid;
@@ -203,6 +211,11 @@ $mobile: 767px;
             width: 100%;
             grid-template-columns: repeat(2,1fr);
             padding: 0 30px;
+        }
+
+        // 手機
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .work-box-small {
