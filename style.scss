@@ -37,9 +37,15 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
-    // 格限樣板區域: " 區域名稱 "
+    // 平板
     @media screen and (max-width: $table) {
+        //  格限樣板區域: " 區域名稱 "
         grid-template-areas: "logo social menu";
+    }
+
+    // 手機
+    @media screen and (max-width: $mobile) {
+        padding: 10px 6px;
     }
 
     
@@ -66,6 +72,11 @@ $mobile: 767px;
             display: block;
             // 左邊自動
             margin-left: auto;
+        }
+
+        // 手機
+        @media screen and (max-width: $mobile) {
+            width: 32px;
         }
     }
 }
@@ -106,6 +117,11 @@ $mobile: 767px;
 .social {
     text-align: right;
     grid-area: social;
+
+    // 手機
+    @media screen and (max-width: $mobile) {
+        margin-left: 0;
+    }
 }
 
 #banner {
@@ -126,6 +142,14 @@ $mobile: 767px;
         letter-spacing: 20px;
         padding-left: 20px;
         margin-top: 100px;
+
+        // 手機
+        @media screen and (max-width: $mobile) {
+            font-size: 64px;
+            letter-spacing: 10px;
+            padding-left: 10px;
+            margin-top: 100px;
+        }
     }
 
     p {
