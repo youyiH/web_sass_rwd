@@ -69,6 +69,12 @@
   color: #6eb3ff;
 }
 
+@media screen and (max-width: 1024px) {
+  .link {
+    display: none;
+  }
+}
+
 .social {
   text-align: right;
 }

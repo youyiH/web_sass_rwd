@@ -11,6 +11,11 @@ $font-size-big: 36px;
 // 字體
 $font-family-main: "Kufam", cursive;
 
+// RWD:桌上、平板、手機
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px;
+
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +75,11 @@ $font-family-main: "Kufam", cursive;
         &:hover {
             color: $color-sub;
         }
+    }
+
+    // 平板:隱藏
+    @media screen and (max-width: $table){
+        display: none;
     }
 }
 .social {
