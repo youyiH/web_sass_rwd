@@ -25,6 +25,12 @@
   background: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #navigation {
+        grid-template-areas: "logo social menu";
+  }
+}
+
 #navigation img {
   -webkit-filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
           filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
@@ -39,6 +45,23 @@
           filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
 }
 
+#navigation #menu {
+  grid-area: menu;
+}
+
+@media screen and (min-width: 1025px) {
+  #navigation #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation #menu {
+    display: block;
+    margin-left: auto;
+  }
+}
+
 .logo {
   font-family: "Kufam", cursive;
   font-size: 36px;
@@ -46,6 +69,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 3px;
+  grid-area: logo;
 }
 
 .logo:hover {
@@ -77,6 +101,7 @@
 
 .social {
   text-align: right;
+  grid-area: social;
 }
 
 #banner {

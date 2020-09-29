@@ -37,6 +37,11 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
+    // 格限樣板區域: " 區域名稱 "
+    @media screen and (max-width: $table) {
+        grid-template-areas: "logo social menu";
+    }
+
     
     img {
         filter: invert(19%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
@@ -48,6 +53,21 @@ $mobile: 767px;
             filter: invert(70%) sepia(6%) saturate(3996%) hue-rotate(194deg) brightness(98%) contrast(83%);
         }
     }
+    // 選單
+    #menu {
+
+        grid-area: menu;
+        // 桌電:隱藏
+        @media screen and (min-width: $desktop) {
+             display: none;
+        }
+        // 平板:顯示
+        @media screen and (max-width: $table) {
+            display: block;
+            // 左邊自動
+            margin-left: auto;
+        }
+    }
 }
 
 .logo {
@@ -56,6 +76,7 @@ $mobile: 767px;
     text-decoration: none;
     transition: 0.5s;
     letter-spacing: 3px;
+    grid-area: logo;
 
     &:hover {
         color: $color-sub;
@@ -84,6 +105,7 @@ $mobile: 767px;
 }
 .social {
     text-align: right;
+    grid-area: social;
 }
 
 #banner {
