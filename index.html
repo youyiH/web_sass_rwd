@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Document</title>
+
+    <!-- AOS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -12,7 +15,7 @@
 <body>
     <!-- 導覽列 -->
     <nav id="navigation">
-        <a href="./index.html" class="logo">YOUYI</a>
+        <a href="./index.html" class="logo" data-aos="slide-down">YOUYI</a>
         <img src="./pictures/icon-Menu.png" alt="選單" id="menu">
         <div class="link">
             <a href="">關於我</a>
@@ -34,7 +37,7 @@
     </section>
     <section id="about">
         <h1 class="title">關於我</h1>
-        <h2>YOUYI</h2>
+        <h2 data-aos="flip-right" data-aos-offset="600" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-mirror="ture" >YOUYI</h2>
         <p>hello,welcom to my web!</p>
         <a href="" class="button-box">關於我</a>
     </section>
@@ -43,32 +46,32 @@
     <section id="works">
         <h1 class="title">作品集</h1>
         <div id="work-box">
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="500" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="500" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-once="ture">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
@@ -82,23 +85,28 @@
     <!-- 頁尾 -->
     <footer>
         <div>
-        <a href="./index.html" class="logo">YOUYI</a>
+            <a href="./index.html" class="logo">YOUYI</a>
         </div>
         <div class="social">
             <a href=""><img src="./pictures/github.png" alt="GITHUB"></a>
             <a href=""><img src="./pictures/email.png" alt="EMAIL"></a>
             <a href=""><img src="./pictures/fb.png" alt="FB"></a>
             <a href=""><img src="./pictures/youtube.png" alt="YOUTUBE"></a>
-                <div class="link">
-                    <a href="">關於我</a>
-                    <a href="">作品集</a>
-                    <a href="">連絡我</a>
-                </div>
-                <div id="copyright">
-                    Copyright &copy; 2010-2020 YOUYI All rights reserved
-                </div>
+            <div class="link">
+                <a href="">關於我</a>
+                <a href="">作品集</a>
+                <a href="">連絡我</a>
+            </div>
+            <div id="copyright">
+                Copyright &copy; 2010-2020 YOUYI All rights reserved
+            </div>
     </footer>
 
+    <!-- AOS CDN  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
